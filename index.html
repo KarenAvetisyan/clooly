@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Put your description here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"><!-- Простая сетка, кастомные стили -->
+    <link rel="stylesheet" href="css/main.css"><!-- Основные стили -->
+    <link rel="stylesheet" href="css/index.css"><!-- Стили ТОЛЬКО для данной страницы  -->
+    <link fetchpriority="high" rel="preload" href="img/banner-clooly.webp" as="image">
+</head>
+<body>
+
+    <div id="wrapper">
+        <!-- хедер  -->
+        <header class="header">
+            <div class="_container">
+                <div class="header-wrap">
+                    <div class="header-logo">
+                        <a href="#"><img src="logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li><a class="header-nav__link" href="#">Главная</a></li>
+                            <li><a class="header-nav__link" href="#">Каталог</a></li>
+                            <li><a class="header-nav__link" href="#">О нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-login">
+                        <a href="#" class="header-login__btn _primaryBtn">Войти</a>
+                    </div>
+                    <div class="header-burger js-burger _d-mx-l">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- баннер  -->
+        <section class="banner">
+            <div class="_container">
+                <div class="banner-wrap">
+                    <div class="banner-info">
+                        <h1 class="_h1-medium">Заряд пользы в&nbsp;каждой коробке</h1>
+                        <p class="banner-info__txt">Полезные наборы для здоровья<br> и энергии, которые сами приезжают к&nbsp;тебе домой.</p>
+                        <div class="banner-img">
+                            <img src="img/banner-clooly.webp" alt="clooly">
+                        </div>
+                        <a href="#" class="banner-info__btn _primaryBtn">Перейти в каталог</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- марквеве -->
+        <section class="marquee _p-y">
+            <div class="marquee-item" data-inviewport="obs__bounce">
+                <ul class="marquee-item__content">
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/dots.svg" alt="icon"> Простая оплата</li>
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/stock.svg" alt="icon"> -10% на первый заказ</li>
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/delivery.svg" alt="icon"> Быстрая доставка по всей России</li>
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/garant.svg" alt="icon"> Гарантия качества</li>
+                </ul>
+
+                <ul aria-hidden="true" class="marquee-item__content">
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/dots.svg" alt="icon"> Простая оплата</li>
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/stock.svg" alt="icon"> -10% на первый заказ</li>
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/delivery.svg" alt="icon"> Быстрая доставка по всей России</li>
+                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/garant.svg" alt="icon"> Гарантия качества</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Мы — команда... -->
+        <section class="group">
+            <div class="_container">
+                <div class="group-wrap _green2" data-inviewport="obs__full-width">
+                    <div class="group-info">
+                        <h2 class="group-info__title" data-inviewport="obs__moveTop">Мы — команда, которая хочет сделать заботу о здоровье простой и доступной.</h2>
+                            <div class="group-img _d-mx-l" data-inviewport="obs__bounce">
+                            <img loading="lazy" src="img/clooly-pockets.webp" alt="clooly pocket">
+                        </div>
+                        <p class="group-info__txt" data-inviewport="obs__moveBottom">Наши боксы — это готовые наборы витаминов, минералов и полезных компонентов, собранные в&nbsp;удобном формате. Мы отбираем только проверенные ингредиенты и соединяем их в&nbsp;комплексы, которые помогают поддерживать энергию, иммунитет и общее самочувствие.</p>
+                    </div>
+                    <div class="group-img _d-mn-l" data-inviewport="obs__bounce">
+                        <img loading="lazy" src="img/clooly-pockets.webp" alt="clooly pocket">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- продукты -->
+        <section class="products _p-y" id="_products">
+            <div class="_container">
+                <div class="_row products-gap">
+                    <div class="_cl">
+                        <div class="product-item _blue product-item__1" data-inviewport="obs__full-width">
+                            <div class="product-item__info" data-inviewport="obs__moveBottom">
+                                <h2 class="product-item__title">Спорт и восстановление</h2>
+                                <ul class="product-item__list">
+                                    <li>Изотоник </li>
+                                    <li>Протеиновые батончики </li>
+                                    <li>Магний </li>
+                                    <li>Соль для ванн </li>
+                                    <li>Бальзам для ног</li>
+                                    <li>Орехи / ягоды </li>
+                                </ul>
+                                <a href="product.html" class="_primaryBtn product-item__link">Подробнее</a>
+                            </div>
+                            <div class="product-item__img" data-inviewport="obs__bounce">
+                                <img loading="lazy" src="img/isotonic.webp" alt="isotonic">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_cl-l-6">
+                        <div class="product-item _green2 product-item__2" data-inviewport="obs__full-width">
+                            <div class="product-item__info" data-inviewport="obs__moveBottom">
+                                <h2 class="product-item__title">Детокс-бокс</h2>
+                                <ul class="product-item__list">
+                                    <li>Травяной чай </li>
+                                    <li>Скраб для тела</li>
+                                    <li>Коллаген</li>
+                                    <li>соль для ванны</li>
+                                    <li>Маска для лица </li>
+                                    <li>Батончики</li>
+                                </ul>
+                                <a href="product.html" class="_primaryBtn product-item__link">Подробнее</a>
+                            </div>
+                            <div class="product-item__img" data-inviewport="obs__bounce">
+                                <img loading="lazy" src="img/detox.webp" alt="detox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_cl-l-6 products-gap">
+                        <div class="product-item _orange product-item__3" data-inviewport="obs__full-width">
+                            <div class="product-item__info" data-inviewport="obs__moveBottom">
+                                <h2 class="product-item__title">Glow-бокс</h2>
+                                <ul class="product-item__list">
+                                    <li>Чай для женского здоровья</li>
+                                    <li>Маски для лица</li>
+                                    <li>Коллаген / биотин </li>
+                                    <li>Скраб для тела </li>
+                                    <li>Батончики </li>
+                                    <li>Соль / бомбочка для ванн </li>
+                                </ul>
+                                <a href="product.html" class="_primaryBtn product-item__link">Подробнее</a>
+                            </div>
+                            <div class="product-item__img" data-inviewport="obs__bounce">
+                                <img loading="lazy" src="img/glowbox.webp" alt="glowbox">
+                            </div>
+                        </div>
+                        <div class="product-item _orange product-item__4" data-inviewport="obs__full-width">
+                            <div class="product-item__info" data-inviewport="obs__moveBottom">
+                                <h2 class="product-item__title">Энергия на день</h2>
+                                <ul class="product-item__list">
+                                    <li>Чай мате</li>
+                                    <li>Батончики </li>
+                                    <li>Шипучие витамины </li>
+                                    <li>Орехи / сухофрукты </li>
+                                    <li>Коллаген</li>
+                                    <li>Скраб для тела </li>
+                                    <li>Патчи для глаз</li>
+                                </ul>
+                                <a href="product.html" class="_primaryBtn product-item__link">Подробнее</a>
+                            </div>
+                            <div class="product-item__img" data-inviewport="obs__bounce">
+                                <img loading="lazy" src="img/baton.webp" alt="baton">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Скидка 10% на первый заказ  -->
+        <section class="customBanner">
+            <div class="_container">
+                <div class="customBanner-wrap _blue" data-inviewport="obs__full-width">
+                    <div class="customBanner-info" data-inviewport="obs__moveTop">
+                        <h2 class="customBanner-info__title">Скидка 10% на первый заказ</h2>
+                        <p class="customBanner-info__txt">Мы не перегружаем вас лишними баночками и сложными схемами. Всё, что нужно, уже собрано в одной коробке. Просто, удобно и с пользой — каждый&nbsp;день.</p>
+                        <div class="customBanner-img _d-mx-l" data-inviewport="obs__bounce">
+                            <img loading="lazy" src="img/stock-pocket.webp" alt="catalog">
+                        </div>
+                        <a href="#" class="customBanner-info__link _primaryBtn">Каталог</a>
+                    </div>
+                    <div class="customBanner-img _d-mn-l" data-inviewport="obs__bounce">
+                        <img loading="lazy" src="img/stock-pocket.webp" alt="catalog">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq  -->
+        <section class="faq _p-y">
+            <div class="_container">
+                <div class="_w-100 _text-center" data-inviewport="obs__moveTop">
+                    <h2 class="faq-title _h2">Часто задаваемые вопросы</h2>
+                </div>
+                <div class="faq-dropdown__wrap">
+                    <div class="faq-dropdown dropdown-item is-open" data-inviewport="obs__moveBottom">
+                        <div class="faq-dropdown__head drop-head">Что входит в бокс?</div>
+                        <div class="faq-dropdown__panel panel">
+                            <p>В каждом боксе — тщательно подобранные товары для здоровья и заботы о себе: витамины, натуральные продукты, косметика и аксессуары. Состав может меняться в зависимости от темы месяца.</p>
+                        </div>
+                    </div>
+                    <div class="faq-dropdown dropdown-item" data-inviewport="obs__moveBottom">
+                        <div class="faq-dropdown__head drop-head">Подходит ли бокс в подарок?</div>
+                        <div class="faq-dropdown__panel panel">
+                            <p>В каждом боксе — тщательно подобранные товары для здоровья и заботы о себе: витамины, натуральные продукты, косметика и аксессуары. Состав может меняться в зависимости от темы месяца.</p>
+                        </div>
+                    </div>
+                    <div class="faq-dropdown dropdown-item" data-inviewport="obs__moveBottom">
+                        <div class="faq-dropdown__head drop-head">Как часто выходит новый бокс?</div>
+                        <div class="faq-dropdown__panel panel">
+                            <p>В каждом боксе — тщательно подобранные товары для здоровья и заботы о себе: витамины, натуральные продукты, косметика и аксессуары. Состав может меняться в зависимости от темы месяца.</p>
+                        </div>
+                    </div>
+                    <div class="faq-dropdown dropdown-item" data-inviewport="obs__moveBottom">
+                        <div class="faq-dropdown__head drop-head">Есть ли доставка по всей России?</div>
+                        <div class="faq-dropdown__panel panel">
+                            <p>В каждом боксе — тщательно подобранные товары для здоровья и заботы о себе: витамины, натуральные продукты, косметика и аксессуары. Состав может меняться в зависимости от темы месяца.</p>
+                        </div>
+                    </div>
+                    <div class="faq-dropdown dropdown-item" data-inviewport="obs__moveBottom">
+                        <div class="faq-dropdown__head drop-head">Можно ли выбрать состав бокса?</div>
+                        <div class="faq-dropdown__panel panel">
+                            <p>В каждом боксе — тщательно подобранные товары для здоровья и заботы о себе: витамины, натуральные продукты, косметика и аксессуары. Состав может меняться в зависимости от темы месяца.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ozon -->
+        <section class="customBanner">
+            <div class="_container">
+                <div class="customBanner-wrap _blue" data-inviewport="obs__full-width">
+                    <div class="customBanner-info" data-inviewport="obs__moveTop">
+                        <h2 class="customBanner-info__title">Наши боксы теперь на Ozon!</h2>
+                        <p class="customBanner-info__txt">Покупайте с быстрой доставкой и&nbsp;скидками<br> прямо на маркетплейсе.</p>
+                        <div class="customBanner-img _d-mx-l" data-inviewport="obs__bounce">
+                            <img loading="lazy" src="img/ozon-icons.webp" alt="ozon">
+                        </div>
+                        <a href="#" class="customBanner-info__link _primaryBtn">Перейти на Ozon</a>
+                    </div>
+                    <div class="customBanner-img _d-mn-l" data-inviewport="obs__bounce">
+                        <img loading="lazy" src="img/ozon-icons.webp" alt="ozon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="_container">
+                <div class="_row">
+                    <div class="_cl footer-top">
+                        <div class="_row">
+                            <div class="_cl-l-5">
+                                <div class="footer-top__logo">
+                                    <img loading="lazy" width="413" height="111" src="logo-dark-big.webp" alt="logo">
+                                </div>
+                            </div>
+                            <div class="_cl-l-5">
+                                <p class="footer-top__txt">Мы создаём боксы, которые приносят пользу
+                                и радость. Внутри — только тщательно отобранные продукты для здоровья, красоты и гармонии.
+                                Всё, чтобы вы чувствовали себя лучше каждый день.</p>
+                            </div>
+                            <div class="_cl-l-2"></div>
+                        </div>
+                    </div>
+                    <div class="_cl footer-middle">
+                        <div class="_row">
+                            <div class="_cl-l-5">
+                                <ul class="footer-middle__socials">
+                                    <li><a href="#"><img loading="lazy" src="img/icons/instagram.svg" alt="instagram"></a></li>
+                                    <li><a href="#"><img loading="lazy" src="img/icons/ws.svg" alt="whatsapp"></a></li>
+                                    <li><a href="#"><img loading="lazy" src="img/icons/telegram.svg" alt="telegram"></a></li>
+                                </ul>
+                            </div>
+                            <div class="_cl-l-7">
+                                <div class="footer-middle__list-wrap">
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Главная</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Каталог</a></li>
+                                            <li><a href="#">О&nbsp;нас</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Контакты</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Каталог</a></li>
+                                            <li><a href="#">О&nbsp;нас</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Документы</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Сертификаты</a></li>
+                                            <li><a href="#">Договор оферты</a></li>
+                                            <li><a href="#">Правила акций</a></li>
+                                            <li><a href="#">Отказ от ответственности</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_cl footer-bottom">
+                        <div class="_row">
+                            <div class="_cl-l-5"><a href="#">Политика конфиденциальности</a></div>
+                            <div class="_cl-l-4"><a href="#">Пользовательское соглашение</a></div>
+                            <div class="_cl-l-3"><a href="#">Доставка и оплата</a></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
