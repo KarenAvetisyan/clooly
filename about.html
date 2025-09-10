@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Clooly</title>
+    <title>Clooly - О нас</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Put your description here.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"><!-- Простая сетка, кастомные стили -->
     <link rel="stylesheet" href="css/main.css"><!-- Основные стили -->
-    <link rel="stylesheet" href="css/index.css" ><!-- Стили ТОЛЬКО для данной страницы  -->
+    <link rel="stylesheet" href="css/about.css" ><!-- Стили ТОЛЬКО для данной страницы  -->
 </head>
 <body>
 
@@ -37,51 +37,126 @@
             </div>
         </header>
         <!-- баннер  -->
-        <section class="banner">
+        <section class="aboutBanner">
             <div class="_container">
-                <div class="banner-wrap">
-                    <div class="banner-info">
-                        <h1 class="_h1-medium">Заряд пользы в&nbsp;каждой коробке</h1>
-                        <p class="banner-info__txt">Полезные наборы для здоровья<br> и энергии, которые сами приезжают к&nbsp;тебе домой.</p>
-                        <div class="banner-img">
-                            <img fetchpriority="high" src="img/banner-clooly.webp" alt="clooly">
-                        </div>
-                        <a href="#" class="banner-info__btn _primaryBtn">Перейти в каталог</a>
+                <h1 class="aboutBanner-title _text-center _h1-small">Забота о&nbsp;себе каждый&nbsp;день</h1>
+                <div class="aboutBanner-img">
+                    <img src="img/about-banner-img.webp" alt="clooly">
+                </div>
+            </div>
+            <div class="_container aboutBanner-item__wrap">
+                    <div class="aboutBanner-item">
+                        <div class="aboutBanner-item__icon _green1"><img loading="lazy" src="img/icons/stars-little.svg" alt="icon"></div>
+                        <div class="aboutBanner-item__txt">Восстановиться после нагрузок, наполнить тело силой и заботой о мышцах</div>
                     </div>
+                    <div class="aboutBanner-item">
+                        <div class="aboutBanner-item__icon _green1"><img loading="lazy" src="img/icons/heart.svg" alt="icon"></div>
+                        <div class="aboutBanner-item__txt">Поддерживать красоту и сияние с помощью витаминов, коллагена, масок</div>
+                    </div>
+                    <div class="aboutBanner-item">
+                        <div class="aboutBanner-item__icon _orange"><img loading="lazy" src="img/icons/oval-man.svg" alt="icon"></div>
+                        <div class="aboutBanner-item__txt">Очищать и обновлять организм, добавляя лёгкость и свежесть в рутину,</div>
+                    </div>
+                    <div class="aboutBanner-item">
+                        <div class="aboutBanner-item__icon _blue"><img loading="lazy" src="img/icons/lightning.svg" alt="icon"></div>
+                        <div class="aboutBanner-item__txt">Заряжаться энергией на целый день, сохраняя баланс и продуктивность.</div>
+                    </div>
+            </div>
+        </section>
+        <!-- Clooly  -->
+        <section class="cloolyAbout _p-t">
+            <div class="_container">
+                <div class="cloolyAbout-head" data-inviewport="obs__moveBottom">
+                        <h2 class="cloolyAbout-head__title">
+                        <span class="cloolyAbout-head__padding">Clooly — это бренд полезных боксов</span>
+                        уникально созданных, чтобы заботиться о вашем теле, энергии
+                        <span class="cloolyAbout-head__padding">и настроении каждый день.</span>
+                    </h2>
+                    <div class="cloolyAbout-head__padding">
+                        <p class="cloolyAbout-head__txt">Мы специализируемся на создании полезных боксов, которые объединяют в себе стиль, качество и практичность. Каждый наш бокс — это тщательно подобранное наполнение, которое вдохновляет, упрощает повседневные задачи и делает жизнь чуть приятнее. Мы верим, что полезное может быть красивым, а забота — в деталях.</p>
+                    </div>
+                </div>
+                <div class="cloolyAbout-banner _blue" data-inviewport="obs__full-width">
+                    <img loading="lazy" data-inviewport="obs__bounce" width="410" height="110" src="logo-white-big.webp" alt="logo">
                 </div>
             </div>
         </section>
-        <!-- марквеве -->
-        <div class="marquee _p-y">
-            <div class="marquee-item" data-inviewport="obs__bounce">
-                <ul class="marquee-item__content">
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/dots.svg" alt="icon"> Простая оплата</li>
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/stock.svg" alt="icon"> -10% на первый заказ</li>
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/delivery.svg" alt="icon"> Быстрая доставка по всей России</li>
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/garant.svg" alt="icon"> Гарантия качества</li>
-                </ul>
-
-                <ul aria-hidden="true" class="marquee-item__content">
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/dots.svg" alt="icon"> Простая оплата</li>
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/stock.svg" alt="icon"> -10% на первый заказ</li>
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/delivery.svg" alt="icon"> Быстрая доставка по всей России</li>
-                    <li class="marquee-item__elem"><img loading="lazy" src="img/icons/garant.svg" alt="icon"> Гарантия качества</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Мы — команда... -->
-        <section class="group">
+        <!-- Наша миссия  -->
+        <section class="mission _p-t">
             <div class="_container">
-                <div class="group-wrap _green2" data-inviewport="obs__full-width">
-                    <div class="group-info">
-                        <h2 class="group-info__title" data-inviewport="obs__moveTop">Мы — команда, которая хочет сделать заботу о здоровье простой и доступной.</h2>
-                            <div class="group-img _d-mx-l" data-inviewport="obs__bounce">
-                            <img loading="lazy" src="img/clooly-pockets.webp" alt="clooly pocket">
+                <h2 class="mission-title _h2 _text-center">Наша миссия</h2>
+            </div>
+            <div class="_container">
+                <div class="marquee" data-inviewport>
+                    <div class="marquee-item" data-inviewport="obs__bounce">
+                        <div class="marquee-item__content">
+                            <div class="marquee-item__elem _green1"> 
+                                <div class="marquee-item__elem-num">01</div>
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div>
+                                <div class="marquee-item__elem-title">Забота о&nbsp;здоровье и&nbsp;энергии</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
+                                </div>
+                            </div>
+                            <div class="marquee-item__elem _orange">
+                                <div class="marquee-item__elem-num">02</div>
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="marquee-item__elem-title">Красота и&nbsp;уверенность</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
+                                </div>
+                            </div>
+                            <div class="marquee-item__elem _blue">
+                                <div class="marquee-item__elem-num">03</div>
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
+                                </div>
+                            </div>
+                            <div class="marquee-item__elem _green1">
+                                <div class="marquee-item__elem-num">04</div>
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="group-info__txt" data-inviewport="obs__moveBottom">Наши боксы — это готовые наборы витаминов, минералов и полезных компонентов, собранные в&nbsp;удобном формате. Мы отбираем только проверенные ингредиенты и соединяем их в&nbsp;комплексы, которые помогают поддерживать энергию, иммунитет и общее самочувствие.</p>
-                    </div>
-                    <div class="group-img _d-mn-l" data-inviewport="obs__bounce">
-                        <img loading="lazy" src="img/clooly-pockets.webp" alt="clooly pocket">
+                        <div aria-hidden="true" class="marquee-item__content">
+                            <div class="marquee-item__elem _green1">
+                                <div class="marquee-item__elem-num">01</div> 
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div>
+                                <div class="marquee-item__elem-title">Забота о&nbsp;здоровье и&nbsp;энергии</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
+                                </div>
+                            </div>
+                            <div class="marquee-item__elem _orange">
+                                <div class="marquee-item__elem-num">02</div>
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="marquee-item__elem-title">Красота и&nbsp;уверенность</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
+                                </div>
+                            </div>
+                            <div class="marquee-item__elem _blue">
+                                <div class="marquee-item__elem-num">03</div>
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
+                                </div>
+                            </div>
+                            <div class="marquee-item__elem _green1">
+                                <div class="marquee-item__elem-num">04</div>
+                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
+                                <div class="marquee-item__elem-txt">
+                                    <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

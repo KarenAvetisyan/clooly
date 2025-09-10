@@ -13,6 +13,12 @@
   font-weight: 500;
   font-style: normal;
 }
+/* inter-Medium */
+@font-face {
+  font-family: "inter-MediumItalic";
+  src: url("../font/Inter-MediumItalic.ttf") format("truetype");
+  font-display: swap;
+}
 /* inter-SemiBold */
 @font-face {
   font-family: "inter";
@@ -219,12 +225,12 @@ body {
   padding-top: 134px;
 }
 @media (max-width: 1319px) {
-  ._h1-medium {
+  ._h1-medium, ._h1-large {
       font-size: 66px;
   }
 }
 @media (max-width: 1199px) {
-    ._h1-medium {
+    ._h1-medium, ._h1-large, ._h1-small {
         font-size: 47px;
     }
 }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Clooly - Страница продукта</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Put your description here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"><!-- Простая сетка, кастомные стили -->
+    <link rel="stylesheet" href="css/main.css"><!-- Основные стили -->
+    <link rel="stylesheet" href="css/product.css" ><!-- Стили ТОЛЬКО для данной страницы  -->
+</head>
+<body>
+
+    <div id="wrapper">
+        <!-- хедер  -->
+        <header class="header">
+            <div class="_container">
+                <div class="header-wrap">
+                    <div class="header-logo">
+                        <a href="#"><img src="logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li><a class="header-nav__link" href="index.html">Главная</a></li>
+                            <li><a class="header-nav__link" href="#">Каталог</a></li>
+                            <li><a class="header-nav__link" href="about.html">О нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-login">
+                        <a href="#" class="header-login__btn _primaryBtn">Войти</a>
+                    </div>
+                    <div class="header-burger js-burger _d-mx-l">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- баннер  -->
+        <section class="productBanner">
+            <div class="_container">
+                <h1 class="productBanner-title _text-center _h1-large">спорт и&nbsp;восс&shy;тановление</h1>
+                <div class="productBanner-wrap">
+                    <div class="productBanner-info">
+                        <div class="productBanner-info__title">Бокс «Спорт и восстановление»</div>
+                        <p class="productBanner-info__txt">с изотоником, магнием и протеином
+обогащён полезными орехами и ягодами, солью для расслабляющей ванны и бальзамом для ног</p>
+                    </div>
+                    <div class="productBanner-img">
+                        <img src="img/product-banner-img.webp" alt="clooly">
+                    </div>
+                    <div class="productBanner-btn__wrap">
+                        <a href="#" class="productBanner-btn _primaryBtn">Заказать бокс</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Баланс для тела и энергии  -->
+        <section class="balance _p-y">
+            <div class="_container">
+                <div class="_row">
+                    <div class="_cl-l-4">
+                        <div class="balance-info" data-inviewport="obs__moveBottom">
+                            <h2 class="balance-info__title">Баланс для тела и&nbsp;энергии</h2>
+                            <p class="balance-info__txt">Собрали всё, что нужно для восстановления и заботы: ванная соль, орехи и ягоды, батончики, магний, изотоник и бальзам для ног. Полный комплект для отдыха и силы каждый день.</p>
+                        </div>
+                    </div>
+                    <div class="_cl-l-3 _cl-m-6">
+                        <div class="balance-img" data-inviewport="obs__bounce">
+                            <img loading="lazy" src="img/clooly-balance.webp" alt="img">
+                        </div>
+                    </div>
+                    <div class="_cl-l-5 _cl-m-6">
+                        <ul class="balance-pack__list">
+                            <li class="balance-pack__item" data-inviewport="obs__bounce" data-delay="0.11s"><img loading="lazy" src="img/isotonic-pic.webp" alt="pic"> <span>Изотоник</span></li>
+                            <li class="balance-pack__item" data-inviewport="obs__bounce" data-delay="0.15s"><img loading="lazy" src="img/balzam-pic.webp" alt="pic"> <span>Бальзам для ног</span></li>
+                            <li class="balance-pack__item" data-inviewport="obs__bounce" data-delay="0.19s"><img loading="lazy" src="img/magnij-pic.webp" alt="pic"> <span>Магний</span></li>
+                            <li class="balance-pack__item" data-inviewport="obs__bounce" data-delay="0.23s"><img loading="lazy" src="img/orehi-pic.webp" alt="pic"> <span>Орехи / ягоды </span></li>
+                            <li class="balance-pack__item" data-inviewport="obs__bounce" data-delay="0.27s"><img loading="lazy" src="img/baton-pic.webp" alt="pic"> <span>Протеиновые батончики</span></li>
+                            <li class="balance-pack__item" data-inviewport="obs__bounce" data-delay="0.31s"><img loading="lazy" src="img/sol-pic.webp" alt="pic"> <span>Соль для ванн</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Изотоник быстрее воды  -->
+        <section class="productFeature">
+            <div class="_container">
+                <div class="productFeature-wrap">
+                    <div class="productFeature-wrap__inner order-mob__2">
+                        <div class="productFeature-item _green1 pf-item-1" data-inviewport="obs__full-width">
+                            <img loading="lazy" class="productFeature-item__star" src="img/icons/star.svg" alt="star">
+                            <div class="productFeature-item__num">30 <span>%</span></div>
+                            <div class="productFeature-item__txt">быстрее восстанавливаются мышцы после тёплой ванны с солью.</div>
+                        </div>
+                        <div class="productFeature-item _green1 pf-item-2" data-inviewport="obs__full-width">
+                            <div class="productFeature-item__num">70 <span>%</span></div>
+                            <div class="productFeature-item__txt">спортсменов сталкиваются с&nbsp;судорогами — магний помогает их предотвратить</div>
+                        </div>
+                        <div class="productFeature-item _green1 pf-item-3" data-inviewport="obs__full-width">
+                            <ul class="productFeature-item__list">
+                                <li>Орехи</li>
+                                <li>ягоды</li>
+                                <li>батончики</li>
+                            </ul>
+                            <div class="productFeature-item__txt">Вспомогательные элементы для восстановления</div>
+                        </div>
+                    </div> 
+                    <div class="productFeature-wrap__inner order-mob__1">
+                        <div class="productFeature-item _orange pf-item-4" data-inviewport="obs__full-width">
+                            <img loading="lazy" class="productFeature-item__star" src="img/icons/star.svg" alt="star">
+                            <h2 class="productFeature-item__title">Изотоник быстрее воды</h2>
+                            <div class="productFeature-item__txt">нагрузки во время тренировки приходится на стопы — бальзам снимает усталость и тяжесть.</div>
+                        </div>
+                        <div class="productFeature-item _orange pf-item-1" data-inviewport="obs__full-width">
+                            <img loading="lazy" class="productFeature-item__star" src="img/icons/star.svg" alt="star">
+                            <div class="productFeature-item__num">80 <span>%</span></div>
+                            <div class="productFeature-item__txt">нагрузки во время тренировки приходится на стопы — бальзам снимает усталость и тяжесть.</div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="_container">
+                <div class="_row">
+                    <div class="_cl footer-top">
+                        <div class="_row">
+                            <div class="_cl-l-5">
+                                <div class="footer-top__logo">
+                                    <img loading="lazy" width="413" height="111" src="logo-dark-big.webp" alt="logo">
+                                </div>
+                            </div>
+                            <div class="_cl-l-5">
+                                <p class="footer-top__txt">Мы создаём боксы, которые приносят пользу
+                                и радость. Внутри — только тщательно отобранные продукты для здоровья, красоты и гармонии.
+                                Всё, чтобы вы чувствовали себя лучше каждый день.</p>
+                            </div>
+                            <div class="_cl-l-2"></div>
+                        </div>
+                    </div>
+                    <div class="_cl footer-middle">
+                        <div class="_row">
+                            <div class="_cl-l-5">
+                                <ul class="footer-middle__socials">
+                                    <li><a href="#"><img loading="lazy" src="img/icons/instagram.svg" alt="instagram"></a></li>
+                                    <li><a href="#"><img loading="lazy" src="img/icons/ws.svg" alt="whatsapp"></a></li>
+                                    <li><a href="#"><img loading="lazy" src="img/icons/telegram.svg" alt="telegram"></a></li>
+                                </ul>
+                            </div>
+                            <div class="_cl-l-7">
+                                <div class="footer-middle__list-wrap">
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Главная</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Каталог</a></li>
+                                            <li><a href="#">О&nbsp;нас</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Контакты</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Каталог</a></li>
+                                            <li><a href="#">О&nbsp;нас</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Документы</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Сертификаты</a></li>
+                                            <li><a href="#">Договор оферты</a></li>
+                                            <li><a href="#">Правила акций</a></li>
+                                            <li><a href="#">Отказ от ответственности</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_cl footer-bottom">
+                        <div class="_row">
+                            <div class="_cl-l-5"><a href="#">Политика конфиденциальности</a></div>
+                            <div class="_cl-l-4"><a href="#">Пользовательское соглашение</a></div>
+                            <div class="_cl-l-3"><a href="#">Доставка и оплата</a></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -75,6 +75,16 @@ img {
 svg {
     overflow: hidden;
 }
+._cl-m-1,
+._cl-m-2,
+._cl-m-3,
+._cl-m-4,
+._cl-m-5,
+._cl-m-6,
+._cl-m-7,
+._cl-m-8,
+._cl-m-9,
+._cl-m-10,
 ._cl-l-1,
 ._cl-l-2,
 ._cl-l-3,
@@ -142,6 +152,48 @@ section {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+}
+@media (min-width: 768px) {
+    ._cl-m-1{
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+    ._cl-m-2{
+        flex: 0 0 auto;
+        max-width: 16.66666667%;
+    }
+    ._cl-m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    ._cl-m-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    ._cl-m-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    ._cl-m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    ._cl-m-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    ._cl-m-8{
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    ._cl-m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    ._cl-m-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
 }
 @media (min-width: 992px) {
     ._cl-l-1{

@@ -51,12 +51,6 @@ document.addEventListener('DOMContentLoaded', function(){
                 nav.classList.toggle('show');
                 return; 
             }
-            if (e.target.matches('.header-nav__link')) {
-                e.preventDefault();
-                burger.classList.remove('clicked');
-                nav.classList.remove('show');
-                return;
-            }
             if (!isNav) {
                 burger.classList.remove('clicked');
                 nav.classList.remove('show');
