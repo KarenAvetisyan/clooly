@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Clooly - Заказ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Put your description here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"><!-- Простая сетка, кастомные стили -->
+    <link rel="stylesheet" href="css/main.css"><!-- Основные стили -->
+    <link rel="stylesheet" href="css/order.css" ><!-- Стили ТОЛЬКО для данной страницы  -->
+</head>
+<body>
+
+    <div id="wrapper">
+        <!-- хедер  -->
+        <header class="header">
+            <div class="_container">
+                <div class="header-wrap">
+                    <div class="header-logo">
+                        <a href="#"><img src="logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li><a class="header-nav__link" href="index.html">Главная</a></li>
+                            <li><a class="header-nav__link" href="#">Каталог</a></li>
+                            <li><a class="header-nav__link" href="about.html">О нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-login">
+                        <a href="#" class="header-login__btn _primaryBtn">Войти</a>
+                    </div>
+                    <div class="header-burger js-burger _d-mx-l">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- заказ  -->
+        <section class="order">
+            <div class="_container">
+                <div class="_row">
+                    <div class="_cl-m-6 order-mob-2">
+                        <div class="order-details__wrap">
+                            <h2 class="order-title _h2">Оформление заказа</h2>
+                            <form action="" class="order-form _form">
+                                <div class="order-form__holder">Данные получателя</div>
+                                <div class="form-group__wrap">
+                                    <div class="form-group _w-50">
+                                        <input type="text" placeholder="Фамилия">
+                                    </div>
+                                    <div class="form-group _w-50">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="phone-mask _phone _req" placeholder="Контактный телефон">
+                                        <div class="req__text">Обязательное поле</div>
+                                        <div class="error__text">Пожалуйста, укажите корректный номер телефона</div>
+                                    </div>
+                                </div>
+                                <div class="order-form__holder">Адрес доставки</div>
+                                <div class="form-group__wrap">
+                                    <div class="form-group _w-50">
+                                        <input type="text" class="_req" placeholder="Страна">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                    <div class="form-group _w-50">
+                                        <input type="text" class="_req" placeholder="Город">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="_req" placeholder="Адрес">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                </div>
+                                <div class="order-form__subtitle">Доставка</div>
+                                <div class="order-form__delivery-wrap">
+                                    <div class="form-group__switch-item">
+                                        <label for="delivery_pochta" class="form-group__switch">
+                                            <input type="radio" name="delivery" id="delivery_pochta" checked>
+                                            <span class="form-group__switcher"></span>
+                                        </label>
+                                        <div class="order-form__delivery">
+                                            <div class="order-form__delivery-info">
+                                                <div class="order-form__delivery-info1">Доставка Почтой России</div>
+                                                <div class="order-form__delivery-info2">6-7 дней</div>
+                                            </div>
+                                            <div class="order-form__delivery-price">600<span>₽</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group__switch-item">
+                                        <label for="delivery_sdek" class="form-group__switch">
+                                            <input type="radio" name="delivery" id="delivery_sdek">
+                                            <span class="form-group__switcher"></span>
+                                        </label>
+                                        <div class="order-form__delivery">
+                                            <div class="order-form__delivery-info">
+                                                <div class="order-form__delivery-info1">Доставка Почтой России</div>
+                                                <div class="order-form__delivery-info2">6-7 дней</div>
+                                            </div>
+                                            <div class="order-form__delivery-price">600<span>₽</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-form__subtitle">Оплата</div>
+                                <div class="form-group__switch-item">
+                                    <label for="card-switch" class="form-group__switch">
+                                        <input type="checkbox" name="card_order" id="card-switch" checked>
+                                        <span class="form-group__switcher"></span>
+                                    </label>
+                                    <div class="order-form__delivery">
+                                        <div class="order-form__delivery-info">
+                                            <div class="order-form__delivery-info1">Картой</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group__wrap">
+                                    <div class="form-group _w-50">
+                                        <input type="text" class="_req" placeholder="Номер карты*">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                    <div class="form-group _w-50">
+                                        <input type="text" class="_req" placeholder="Срок действия*">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                    <div class="form-group _w-50">
+                                        <input type="text" class="_req" placeholder="Срок действия*">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                    <div class="form-group _w-50">
+                                        <input type="text" class="_req" placeholder="Срок действия*">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="order-form__agree">
+                                        <input type="checkbox" class="_req" checked>
+                                        <span class="order-form__agree-txt">Согласен на обработку персональных данных</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="order-form__submit">Перейти к оплате</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="_cl-m-6 order-mob-1">
+                        <div class="order-item__wrap">
+                            <div class="order-title _h2">Ваш заказ</div>
+                            <div class="order-item">
+                                <div class="order-item__img">
+                                    <img src="img/order-item-img.webp" alt="order img">
+                                </div>
+                                <div class="order-item__info">
+                                    <div class="order-item__info-title">Спорт и восстановление</div>
+                                    <a href="#" class="order-item__info-remove">Удалить</a>
+                                </div>
+                                <div class="order-item__price">1999<span>₽</span></div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-item__img">
+                                    <img src="img/order-item-img.webp" alt="order img">
+                                </div>
+                                <div class="order-item__info">
+                                    <div class="order-item__info-title">Детокс-бокс</div>
+                                    <a href="#" class="order-item__info-remove">Удалить</a>
+                                </div>
+                                <div class="order-item__price">1899<span>₽</span></div>
+                            </div>
+                            <div class="order-item__delivery">
+                                <div class="order-item__delivery-txt">Доставка</div>
+                                <div class="order-item__delivery-price">600<span>₽</span></div>
+                            </div>
+                            <div class="order-item__total">
+                                <div class="order-item__total-title">Итого</div>
+                                <div class="order-item__total-price">4498<span>₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="_container">
+                <div class="_row">
+                    <div class="_cl footer-top">
+                        <div class="_row">
+                            <div class="_cl-l-5">
+                                <div class="footer-top__logo">
+                                    <img loading="lazy" width="413" height="111" src="logo-dark-big.webp" alt="logo">
+                                </div>
+                            </div>
+                            <div class="_cl-l-5">
+                                <p class="footer-top__txt">Мы создаём боксы, которые приносят пользу
+                                и радость. Внутри — только тщательно отобранные продукты для здоровья, красоты и гармонии.
+                                Всё, чтобы вы чувствовали себя лучше каждый день.</p>
+                            </div>
+                            <div class="_cl-l-2"></div>
+                        </div>
+                    </div>
+                    <div class="_cl footer-middle">
+                        <div class="_row">
+                            <div class="_cl-l-5">
+                                <ul class="footer-middle__socials">
+                                    <li><a href="#"><img loading="lazy" src="img/icons/instagram.svg" alt="instagram"></a></li>
+                                    <li><a href="#"><img loading="lazy" src="img/icons/ws.svg" alt="whatsapp"></a></li>
+                                    <li><a href="#"><img loading="lazy" src="img/icons/telegram.svg" alt="telegram"></a></li>
+                                </ul>
+                            </div>
+                            <div class="_cl-l-7">
+                                <div class="footer-middle__list-wrap">
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Главная</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Каталог</a></li>
+                                            <li><a href="#">О&nbsp;нас</a></li>
+                                            <li><a href="contact.html">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Контакты</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="mailto:team@clooly.ru">team@clooly.ru</a></li>
+                                            <li><a href="tel:89003344354">8 (900) 334 - 43 - 54</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-middle__list-wrap-inner">
+                                        <div class="footer-middle__list-title">Документы</div>
+                                        <ul class="footer-middle__list">
+                                            <li><a href="#">Сертификаты</a></li>
+                                            <li><a href="#">Договор оферты</a></li>
+                                            <li><a href="#">Правила акций</a></li>
+                                            <li><a href="#">Отказ от ответственности</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_cl footer-bottom">
+                        <div class="_row">
+                            <div class="_cl-l-5"><a href="#">Политика конфиденциальности</a></div>
+                            <div class="_cl-l-4"><a href="#">Пользовательское соглашение</a></div>
+                            <div class="_cl-l-3"><a href="#">Доставка и оплата</a></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/form-send.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

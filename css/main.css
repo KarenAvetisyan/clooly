@@ -228,11 +228,17 @@ body {
   ._h1-medium, ._h1-large {
       font-size: 66px;
   }
+  ._h1-larger{
+    font-size: 150px;
+  }
 }
 @media (max-width: 1199px) {
-    ._h1-medium, ._h1-large, ._h1-small {
+    ._h1-medium, ._h1-large, ._h1-larger, ._h1-small {
         font-size: 47px;
     }
+  ._h1-larger{
+    font-size: 100px;
+  }
 }
 @media (max-width: 991px) {
   html{
