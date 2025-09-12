@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"><!-- Простая сетка, кастомные стили -->
     <link rel="stylesheet" href="css/main.css"><!-- Основные стили -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- ТОЛЬКО для данной страницы -->
     <link rel="stylesheet" href="css/about.css" ><!-- Стили ТОЛЬКО для данной страницы  -->
 </head>
 <body>
@@ -87,72 +88,44 @@
                 <h2 class="mission-title _h2 _text-center">Наша миссия</h2>
             </div>
             <div class="_container">
-                <div class="marquee" data-inviewport>
-                    <div class="marquee-item" data-inviewport="obs__bounce">
-                        <div class="marquee-item__content">
-                            <div class="marquee-item__elem _green1"> 
-                                <div class="marquee-item__elem-num">01</div>
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div>
-                                <div class="marquee-item__elem-title">Забота о&nbsp;здоровье и&nbsp;энергии</div>
-                                <div class="marquee-item__elem-txt">
+                <div class="swiper missionSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mission-item _green1"> 
+                                <div class="mission-item__num">01</div>
+                                <div class="mission-item__star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div>
+                                <div class="mission-item__title">Забота о&nbsp;здоровье и&nbsp;энергии</div>
+                                <div class="mission-item__txt">
                                     <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
                                 </div>
                             </div>
-                            <div class="marquee-item__elem _orange">
-                                <div class="marquee-item__elem-num">02</div>
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
-                                <div class="marquee-item__elem-title">Красота и&nbsp;уверенность</div>
-                                <div class="marquee-item__elem-txt">
-                                    <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
-                                </div>
-                            </div>
-                            <div class="marquee-item__elem _blue">
-                                <div class="marquee-item__elem-num">03</div>
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
-                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
-                                <div class="marquee-item__elem-txt">
-                                    <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
-                                </div>
-                            </div>
-                            <div class="marquee-item__elem _green1">
-                                <div class="marquee-item__elem-num">04</div>
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
-                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
-                                <div class="marquee-item__elem-txt">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mission-item _orange">
+                                <div class="mission-item__num">02</div>
+                                <div class="mission-item__star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="mission-item__title">Красота и&nbsp;уверенность</div>
+                                <div class="mission-item__txt">
                                     <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
                                 </div>
                             </div>
                         </div>
-                        <div aria-hidden="true" class="marquee-item__content">
-                            <div class="marquee-item__elem _green1">
-                                <div class="marquee-item__elem-num">01</div> 
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div>
-                                <div class="marquee-item__elem-title">Забота о&nbsp;здоровье и&nbsp;энергии</div>
-                                <div class="marquee-item__elem-txt">
+                        <div class="swiper-slide">
+                            <div class="mission-item _blue">
+                                <div class="mission-item__num">03</div>
+                                <div class="mission-item__star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="mission-item__title">Забота о здоровье и&nbsp;энергии</div>
+                                <div class="mission-item__txt">
                                     <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
                                 </div>
                             </div>
-                            <div class="marquee-item__elem _orange">
-                                <div class="marquee-item__elem-num">02</div>
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
-                                <div class="marquee-item__elem-title">Красота и&nbsp;уверенность</div>
-                                <div class="marquee-item__elem-txt">
-                                    <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
-                                </div>
-                            </div>
-                            <div class="marquee-item__elem _blue">
-                                <div class="marquee-item__elem-num">03</div>
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
-                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
-                                <div class="marquee-item__elem-txt">
-                                    <p>Мы делаем заботу о теле простой и приятной: помогаем поддерживать баланс сил, здоровья и хорошего самочувствия каждый день.</p>
-                                </div>
-                            </div>
-                            <div class="marquee-item__elem _green1">
-                                <div class="marquee-item__elem-num">04</div>
-                                <div class="marquee-item__elem-star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
-                                <div class="marquee-item__elem-title">Забота о здоровье и&nbsp;энергии</div>
-                                <div class="marquee-item__elem-txt">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mission-item _green1">
+                                <div class="mission-item__num">04</div>
+                                <div class="mission-item__star"><img loading="lazy" src="img/icons/star.svg" alt="star"></div> 
+                                <div class="mission-item__title">Забота о здоровье и&nbsp;энергии</div>
+                                <div class="mission-item__txt">
                                     <p>Мы создаём боксы, которые вдохновляют уделять внимание себе, раскрывать внутреннее Красота и уверенность и чувствовать уверенность в своём теле.</p>
                                 </div>
                             </div>
@@ -389,7 +362,20 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- ТОЛЬКО для данной страницы -->
     <script src="js/script.js"></script>
+    <!-- скрипт swiper ТОЛЬКО для данной страницы -->
+    <script>
+           var swiper = new Swiper(".missionSwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            breakpoints: {
+                768: {
+                spaceBetween: 20,
+                },
+            },
+           });
+    </script>
 </body>
 </html>
 
