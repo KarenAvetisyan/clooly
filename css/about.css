@@ -187,6 +187,9 @@ body{
     padding: 130px 40px 40px 40px;
     min-height: 400px;
 }
+.mission-item:hover{
+    cursor: pointer;
+}
 .mission-item__title{
     max-width: 358px;
     display: inline-block;

@@ -366,15 +366,24 @@
     <script src="js/script.js"></script>
     <!-- скрипт swiper ТОЛЬКО для данной страницы -->
     <script>
-           var swiper = new Swiper(".missionSwiper", {
+        var swiper = new Swiper(".missionSwiper", {
             slidesPerView: 'auto',
+            loop: true,
             spaceBetween: 10,
+            speed: 5000, 
+            autoplay: {
+                delay: 0, 
+                disableOnInteraction: false,
+            },
+            freeMode: true, 
+            freeModeMomentum: false,
             breakpoints: {
                 768: {
-                spaceBetween: 20,
+                    spaceBetween: 20,
                 },
             },
-           });
+        });
+
     </script>
 </body>
 </html>
